@@ -1,0 +1,37 @@
+/* assets/css/main.css */
+@import "tailwindcss";
+
+@theme {
+  /* Refined Color Palette */
+  --color-refined-sage: #9baa94;
+  --color-refined-stone: #dbdbcc;
+  --color-refined-sky: #b5d1d9;
+  --color-refined-forest: #384026;
+  --color-refined-cream: #f7f0e7;
+  --color-refined-espresso: #5c2c16; /* True deep brown color from asset visual */
+
+  /* Refined Typography Standards */
+  --font-sans: "Tenor Sans", sans-serif;
+  --font-serif: "Quattrocento", serif;
+}
+
+/* Global Application Reset Defaults */
+body {
+  background-color: var(--color-refined-cream);
+  color: var(--color-refined-forest);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Page Transition Styles */
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  transform: translateY(4px);
+}
