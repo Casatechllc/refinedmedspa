@@ -14,6 +14,14 @@ export default defineNuxtConfig({
     ],
   },
 
+  runtimeConfig: {
+    // Keys inside public are exposed to both the server and the client browser
+    public: {
+      googleMapsApiKey: process.env.GOOGLE_MAPS_API_KEY,
+      googlePlaceId: process.env.GOOGLE_PLACE_ID,
+    }
+  },
+
   modules: ['@nuxt/image'],
 
   app: {

@@ -39,10 +39,10 @@
           class="w-full max-w-[340px] sm:max-w-[400px] py-2"
         >
           <NuxtImg 
-            src="/logo-long-transparent.png" 
+            src="/logo-long-alt-transparent.png" 
             alt="Refined Health and Aesthetics"
-            width="450"
-            height="145"
+            width="700"
+            height="170"
             format="webp"
             loading="eager"
             class="w-full h-auto object-contain text-refined-forest"
