@@ -7,3 +7,11 @@
     <AppFooter />
   </div>
 </template>
+
+<script setup>
+useHead({
+  meta: [
+    { name: 'referrer', content: 'no-referrer' }
+  ]
+})
+</script>

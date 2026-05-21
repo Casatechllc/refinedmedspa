@@ -4,7 +4,7 @@
       
       <NuxtLink to="/" class="flex items-center max-w-[180px] sm:max-w-[220px] transition-opacity duration-300 hover:opacity-80">
         <img 
-          src="/logo-long-transparent.png" 
+          src="/logo-long-alt-transparent.png" 
           alt="Refined Health & Aesthetics Logo" 
           class="w-full h-auto object-contain"
         />

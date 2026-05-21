@@ -6,13 +6,26 @@
         <span class="font-serif text-xs tracking-[0.25em] uppercase text-refined-sage block">Verified Patient Sentiment</span>
         <h2 class="font-sans text-3xl text-refined-forest tracking-wide">Excellent Experiences</h2>
         
-        <div class="flex items-center justify-center space-x-2 pt-2">
-          <div class="flex space-x-1 text-refined-sage">
-            <span v-for="i in 5" :key="i" class="text-lg">★</span>
+        <div class="flex flex-col items-center justify-center space-y-3 pt-2">
+          <div class="flex items-center justify-center space-x-2">
+            <div class="flex space-x-1 text-refined-sage">
+              <span v-for="i in 5" :key="i" class="text-lg">★</span>
+            </div>
+            <span class="font-sans text-xs tracking-widest uppercase text-refined-forest/70 font-semibold pl-1">
+              5.0 Rating / {{ totalReviewsCount }} Reviews
+            </span>
           </div>
-          <span class="font-sans text-xs tracking-widest uppercase text-refined-forest/70 font-semibold pl-1">
-            5.0 Rating / {{ totalReviewsCount }} Reviews
-          </span>
+
+          <a 
+            v-if="googleReviewUrl"
+            :href="googleReviewUrl" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="inline-flex items-center space-x-1.5 font-sans text-[11px] tracking-[0.2em] uppercase text-refined-forest/80 hover:text-refined-forest font-bold transition-colors border-b border-refined-sage/40 pb-0.5 group"
+          >
+            <span>Rate us on Google</span>
+            <span class="transition-transform duration-300 group-hover:translate-x-0.5">→</span>
+          </a>
         </div>
       </div>
 
@@ -25,51 +38,51 @@
         <div class="swiper px-2">
           <div class="swiper-wrapper">
   
-  <div 
-    v-for="(review, index) in filteredFiveStarReviews" 
-    :key="index"
-    class="swiper-slide h-auto bg-white/40 border border-refined-stone/40 p-6 sm:p-8 flex flex-col justify-between space-y-6 box-border shrink-0 select-none"
-  >
-    <div class="space-y-4">
-      <div class="flex space-x-0.5 text-refined-sage text-sm">
-        <span v-for="star in (review.publishRating || review.rating)" :key="star">★</span>
-      </div>
-      
-      <p 
-        class="font-serif text-sm text-refined-forest/80 italic leading-relaxed transition-all duration-300 cursor-pointer"
-        :class="expandedReviewIndex === index ? 'line-clamp-none' : 'line-clamp-5 lg:hover:line-clamp-none'"
-        @click="toggleReview(index)"
-        title="Click to expand/collapse"
-        >
-        "{{ review.text?.text || review.text }}"
-      </p>
-    </div>
+            <div 
+              v-for="(review, index) in filteredFiveStarReviews" 
+              :key="index"
+              class="swiper-slide h-auto bg-white/40 border border-refined-stone/40 p-6 sm:p-8 flex flex-col justify-between space-y-6 box-border shrink-0 select-none"
+            >
+              <div class="space-y-4">
+                <div class="flex space-x-0.5 text-refined-sage text-sm">
+                  <span v-for="star in (review.publishRating || review.rating)" :key="star">★</span>
+                </div>
+                
+                <p 
+                  class="font-serif text-sm text-refined-forest/80 italic leading-relaxed transition-all duration-300 cursor-pointer"
+                  :class="expandedReviewIndex === index ? 'line-clamp-none' : 'line-clamp-5 lg:hover:line-clamp-none'"
+                  @click="toggleReview(index)"
+                  title="Click to expand/collapse"
+                  >
+                  "{{ review.text?.text || review.text }}"
+                </p>
+              </div>
 
-    <div class="flex items-center space-x-3 pt-4 border-t border-refined-stone/20 mt-auto">
-      <div class="w-8 h-8 rounded-full bg-refined-stone/40 flex items-center justify-center text-refined-forest text-xs font-sans font-bold uppercase overflow-hidden shrink-0">
-        
-        <img 
-          v-if="review.authorAttribution?.photoUri || review.profile_photo_url" 
-          :src="review.authorAttribution?.photoUri || review.profile_photo_url" 
-          :alt="review.authorAttribution?.displayName || review.author_name" 
-          class="w-full h-full object-cover" 
-        />
-        
-        <span v-else>
-          {{ (review.authorAttribution?.displayName || review.author_name || 'P').charAt(0) }}
-        </span>
-      </div>
-      
-      <div>
-        <h4 class="font-sans text-xs font-semibold tracking-wider uppercase text-refined-forest">
-          {{ review.authorAttribution?.displayName || review.author_name }}
-        </h4>
-        <p class="font-serif text-[11px] text-refined-forest/50 mt-0.5">Verified Patient Review</p>
-      </div>
-    </div>
-  </div>
+              <div class="flex items-center space-x-3 pt-4 border-t border-refined-stone/20 mt-auto">
+                <div class="w-8 h-8 rounded-full bg-refined-stone/40 flex items-center justify-center text-refined-forest text-xs font-sans font-bold uppercase overflow-hidden shrink-0">
+                  
+                  <img 
+                    v-if="review.authorAttribution?.photoUri || (review.profile_photo_url && review.profile_photo_url !== '')" 
+                    :src="review.authorAttribution?.photoUri || review.profile_photo_url" 
+                    :alt="review.authorAttribution?.displayName || review.author_name" 
+                    class="w-full h-full object-cover" 
+                  />
+                  
+                  <span v-else>
+                    {{ (review.authorAttribution?.displayName || review.author_name || 'P').charAt(0) }}
+                  </span>
+                </div>
+                
+                <div>
+                  <h4 class="font-sans text-xs font-semibold tracking-wider uppercase text-refined-forest">
+                    {{ review.authorAttribution?.displayName || review.author_name }}
+                  </h4>
+                  <p class="font-serif text-[11px] text-refined-forest/50 mt-0.5">Verified Patient Review</p>
+                </div>
+              </div>
+            </div>
 
-</div>
+          </div>
         </div>
 
         <button aria-label="Previous Slide" class="swiper-button-prev-custom absolute left-0 top-1/2 -translate-y-1/2 text-refined-forest/40 hover:text-refined-forest transition-colors duration-300 hidden sm:block focus:outline-none">
@@ -96,22 +109,23 @@ import { ref, computed, onMounted } from 'vue'
 import Swiper from 'swiper'
 import { Pagination, Autoplay, Navigation } from 'swiper/modules'
 
-// Core Swiper CSS Asset Registry
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 
-// Expose configuration keys locally so the component framework stays in sync
 const config = useRuntimeConfig()
 const placeId = config.public.googlePlaceId
 const apiKey = config.public.googleMapsApiKey
 
+// Generate the high-conversion direct review url format using your public runtime config key
+const googleReviewUrl = computed(() => {
+  return placeId ? `https://search.google.com/local/writereview?placeid=${placeId}` : ''
+})
+
 const totalReviewsCount = ref(25)
 
-// Fetch review array data directly from your server-to-server proxy route tier
 const { data: googleData } = await useFetch('/api/reviews', { lazy: true })
 
-// Luxury aesthetic fallbacks to retain grid symmetry prior to Google indexing 3 reviews
 const localBackupReviews = [
   {
     author_name: "Sarah M.",
@@ -133,7 +147,6 @@ const localBackupReviews = [
   }
 ]
 
-// Pure array formatting layer filter
 const filteredFiveStarReviews = computed(() => {
   const liveReviews = googleData.value?.reviews
   
@@ -144,7 +157,6 @@ const filteredFiveStarReviews = computed(() => {
     
     const liveFiveStar = liveReviews.filter(review => review.rating === 5)
     
-    // Safety Net: load backups if live map channel returns fewer than 3 options
     if (liveFiveStar.length < 3) {
       return localBackupReviews
     }
@@ -156,7 +168,6 @@ const filteredFiveStarReviews = computed(() => {
 const expandedReviewIndex = ref(null)
 
 const toggleReview = (index) => {
-  // If the clicked review is already open, collapse it. Otherwise, open it!
   if (expandedReviewIndex.value === index) {
     expandedReviewIndex.value = null
   } else {
@@ -165,7 +176,6 @@ const toggleReview = (index) => {
 }
 
 onMounted(() => {
-  // Bind engine operations exclusively once inside client browser frame
   if (process.client) {
     new Swiper('.swiper', {
       modules: [Pagination, Autoplay, Navigation],
@@ -200,7 +210,6 @@ onMounted(() => {
 </script>
 
 <style>
-/* Structural Layout Overrides bypassing Tailwind v4 compilation pruning */
 .swiper {
   width: 100%;
   overflow: hidden;
@@ -219,20 +228,18 @@ onMounted(() => {
   height: auto !important;
 }
 
-/* Layer Isolation: Forces control elements to sit strictly above content grid tracks */
 .swiper-button-prev-custom,
 .swiper-button-next-custom {
   z-index: 50 !important;
   cursor: pointer !important;
 }
 
-/* Custom Minimalist Bullet Formatting */
 .review-bullet {
   display: inline-block;
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: #c2b6a6; /* Warm stone palette fallback constant */
+  background-color: #c2b6a6;
   opacity: 0.4;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -241,7 +248,7 @@ onMounted(() => {
 
 .review-bullet-active {
   opacity: 1 !important;
-  background-color: #2c3e35; /* Deep luxury forest theme dark accent constant */
+  background-color: #2c3e35;
   transform: scale(1.2);
 }
 </style>
