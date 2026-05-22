@@ -36,14 +36,26 @@
             leave-to-class="transform scale-95 opacity-0 -translate-y-2"
           >
             <div v-if="isDropdownOpen" class="absolute left-1/2 -translate-x-1/2 top-full w-64 bg-refined-cream border border-refined-stone/40 p-4 shadow-xl space-y-3 rounded-none">
-              <NuxtLink to="/services/expression-softening" class="block font-serif text-sm text-refined-forest/80 hover:text-refined-forest transition-colors duration-200">
-                Expression Softening
+              <NuxtLink to="/services" class="block font-serif text-sm text-refined-forest/80 hover:text-refined-forest transition-colors duration-200">
+                Services Overview
               </NuxtLink>
-              <NuxtLink to="/services/collagen-preservation" class="block font-serif text-sm text-refined-forest/80 hover:text-refined-forest transition-colors duration-200">
-                Collagen Preservation
+              <NuxtLink to="/services/medical-weight-loss" class="block font-serif text-sm text-refined-forest/80 hover:text-refined-forest transition-colors duration-200">
+                Medical Weight Loss
               </NuxtLink>
-              <NuxtLink to="/services/aesthetic-therapy" class="block font-serif text-sm text-refined-forest/80 hover:text-refined-forest transition-colors duration-200">
-                Aesthetic Therapy
+              <NuxtLink to="/services/functional-medicine" class="block font-serif text-sm text-refined-forest/80 hover:text-refined-forest transition-colors duration-200">
+                Functional Medicine
+              </NuxtLink>
+              <NuxtLink to="/services/mens-health" class="block font-serif text-sm text-refined-forest/80 hover:text-refined-forest transition-colors duration-200">
+                Men's Health
+              </NuxtLink>
+              <NuxtLink to="/services/womens-health" class="block font-serif text-sm text-refined-forest/80 hover:text-refined-forest transition-colors duration-200">
+                Women's Health
+              </NuxtLink>
+              <NuxtLink to="/services/Aesthetics" class="block font-serif text-sm text-refined-forest/80 hover:text-refined-forest transition-colors duration-200">
+                Aesthetics
+              </NuxtLink>
+              <NuxtLink to="/services/iv-hydration" class="block font-serif text-sm text-refined-forest/80 hover:text-refined-forest transition-colors duration-200">
+                IV Hydration
               </NuxtLink>
             </div>
           </Transition>
@@ -103,9 +115,13 @@
               </svg>
             </button>
             <div v-if="isMobileServicesOpen" class="bg-refined-stone/20 py-3 px-6 flex flex-col space-y-3">
-              <NuxtLink @click="isMobileMenuOpen = false" to="/services/expression-softening" class="font-serif text-sm text-refined-forest/80">Expression Softening</NuxtLink>
-              <NuxtLink @click="isMobileMenuOpen = false" to="/services/collagen-preservation" class="font-serif text-sm text-refined-forest/80">Collagen Preservation</NuxtLink>
-              <NuxtLink @click="isMobileMenuOpen = false" to="/services/aesthetic-therapy" class="font-serif text-sm text-refined-forest/80">Aesthetic Therapy</NuxtLink>
+              <NuxtLink @click="isMobileMenuOpen = false" to="/services" class="font-serif text-sm text-refined-forest/80">Services Overview</NuxtLink>
+              <NuxtLink @click="isMobileMenuOpen = false" to="/services/medical-weight-loss" class="font-serif text-sm text-refined-forest/80">Medical Weight Loss</NuxtLink>
+              <NuxtLink @click="isMobileMenuOpen = false" to="/services/functional-medicine" class="font-serif text-sm text-refined-forest/80">Functional Medicine</NuxtLink>
+              <NuxtLink @click="isMobileMenuOpen = false" to="/services/mens-health" class="font-serif text-sm text-refined-forest/80">Men's Health</NuxtLink>
+              <NuxtLink @click="isMobileMenuOpen = false" to="/services/womens-health" class="font-serif text-sm text-refined-forest/80">Women's Health</NuxtLink>
+              <NuxtLink @click="isMobileMenuOpen = false" to="/services/aesthetics" class="font-serif text-sm text-refined-forest/80">Aesthetics</NuxtLink>
+              <NuxtLink @click="isMobileMenuOpen = false" to="/services/iv-hydration" class="font-serif text-sm text-refined-forest/80">IV Hydration</NuxtLink>
             </div>
           </div>
 

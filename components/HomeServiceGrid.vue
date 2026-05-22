@@ -25,7 +25,7 @@
           :visible="{ opacity: 1, transition: { duration: 1200, delay: 300 } }"
           class="font-serif text-sm sm:text-base text-refined-forest/70 leading-relaxed"
         >
-          We provide personalized medical weight loss, functional medicine, hormone health, aesthetics, and IV hydration therapies designed to support long-term wellness and optimization.
+          We provide personalized medical weight loss, functional medicine, specialized health optimization, aesthetics, and IV hydration therapies designed to support long-term vitality.
         </p>
       </div>
 
@@ -40,17 +40,17 @@
           <div class="aspect-[3/4] w-full overflow-hidden bg-refined-stone/20 relative shadow-xs">
             <img 
               src="/mspa-image-5.png" 
-              alt="Medical Weight Loss - refine self"
+              alt="Personalized Medical Weight Loss"
               loading="lazy"
               decoding="async"
               class="w-full h-full object-cover object-center group-hover:scale-103 transition-transform duration-1000 ease-out"
             />
           </div>
           <div class="space-y-2">
-            <h3 class="font-sans text-xl text-refined-forest tracking-wide">Medical Weight Loss</h3>
+            <h3 class="font-sans text-xl text-refined-forest tracking-wide">Personalized Medical Weight Loss</h3>
             <p class="font-serif text-xs tracking-widest text-refined-sage uppercase font-medium">Refine Self Program</p>
             <p class="font-serif text-sm text-refined-forest/70 leading-relaxed pt-1">
-              Personalized, medically supervised, and sustainable metabolic care. Our nurse practitioner-led programs focus on long-term health phases: weight loss, stabilization, and maintenance.
+              Sustainable, compassionate programs focused on metabolic health for lasting change, helping you regain energy, confidence, and long-term success.
             </p>
             <div class="pt-2">
               <NuxtLink to="#pricing" class="inline-block font-sans text-xs tracking-wider uppercase text-refined-forest font-semibold border-b border-refined-forest/20 pb-0.5 hover:border-refined-forest transition-colors">
@@ -68,22 +68,22 @@
         >
           <div class="aspect-[3/4] w-full overflow-hidden bg-refined-stone/20 relative shadow-xs">
             <img 
-              src="/mspa-image-3.png" 
-              alt="Comprehensive Wellness Consultation"
+              src="/home-hero.png" 
+              alt="IV Hydration Therapy Menu"
               loading="lazy"
               decoding="async"
               class="w-full h-full object-cover object-center group-hover:scale-103 transition-transform duration-1000 ease-out"
             />
           </div>
           <div class="space-y-2">
-            <h3 class="font-sans text-xl text-refined-forest tracking-wide">Functional Medicine</h3>
-            <p class="font-serif text-xs tracking-widest text-refined-sage uppercase font-medium">Comprehensive Wellness Consultation</p>
+            <h3 class="font-sans text-xl text-refined-forest tracking-wide">IV Hydration Therapy</h3>
+            <p class="font-serif text-xs tracking-widest text-refined-sage uppercase font-medium">Restore & Revitalize Infusions</p>
             <p class="font-serif text-sm text-refined-forest/70 leading-relaxed pt-1">
-              A root-cause approach designed to restore balance. We look deeply at interconnected systems including hormones, gut health, nutrition, and inflammation to find why symptoms occur.
+              Restore, replenish, and revitalize with essential vitamins and nutrients delivered directly for fast, effective support for energy, recovery, and immunity.
             </p>
             <div class="pt-2">
               <NuxtLink to="/contact" class="inline-block font-sans text-xs tracking-wider uppercase text-refined-forest font-semibold border-b border-refined-forest/20 pb-0.5 hover:border-refined-forest transition-colors">
-                Begin Path Toward Vitality
+                Book IV Experience
               </NuxtLink>
             </div>
           </div>
@@ -97,22 +97,22 @@
         >
           <div class="aspect-[3/4] w-full overflow-hidden bg-refined-stone/20 relative shadow-xs">
             <img 
-              src="/home-hero.png" 
-              alt="IV Hydration Therapy Menu"
+              src="/mspa-image-3.png" 
+              alt="Functional Medicine & Whole-Person Wellness"
               loading="lazy"
               decoding="async"
               class="w-full h-full object-cover object-center group-hover:scale-103 transition-transform duration-1000 ease-out"
             />
           </div>
           <div class="space-y-2">
-            <h3 class="font-sans text-xl text-refined-forest tracking-wide">IV Hydration Therapy</h3>
-            <p class="font-serif text-xs tracking-widest text-refined-sage uppercase font-medium">Restore & Revitalize Infusions</p>
+            <h3 class="font-sans text-xl text-refined-forest tracking-wide">Functional Medicine &amp; Whole-Person Wellness</h3>
+            <p class="font-serif text-xs tracking-widest text-refined-sage uppercase font-medium">Comprehensive Holistic Evaluation</p>
             <p class="font-serif text-sm text-refined-forest/70 leading-relaxed pt-1">
-              Delivering targeted vitamins, minerals, and nutrients directly into the bloodstream for rapid replenishment. Ideal for low energy, immune support, and wellness optimization.
+              A personalized, root-cause approach to optimize hormones, performance, and vitality, complemented by medical aesthetics for natural, elevated confidence.
             </p>
             <div class="pt-2">
               <NuxtLink to="/contact" class="inline-block font-sans text-xs tracking-wider uppercase text-refined-forest font-semibold border-b border-refined-forest/20 pb-0.5 hover:border-refined-forest transition-colors">
-                Book IV Experience
+                Begin Path Toward Vitality
               </NuxtLink>
             </div>
           </div>
@@ -164,9 +164,9 @@
           </div>
           <div class="space-y-2">
             <h3 class="font-sans text-xl text-refined-forest tracking-wide">Men’s Health</h3>
-            <p class="font-serif text-xs tracking-widest text-refined-sage uppercase font-medium">Advanced Hormone & Wellness Assessment</p>
+            <p class="font-serif text-xs tracking-widest text-refined-sage uppercase font-medium">Advanced Hormone & Performance Assessment</p>
             <p class="font-serif text-sm text-refined-forest/70 leading-relaxed pt-1">
-              Maintaining vitality, confidence, and long-term performance. Addressing fatigue, hormone balance, metabolic parameters, and preventive care tailored to men's physiology.
+              Personalized approach to optimize strength, energy, and long-term performance through hormone balance, metabolic health, and preventive care.
             </p>
             <div class="pt-2">
               <NuxtLink to="/contact" class="inline-block font-sans text-xs tracking-wider uppercase text-refined-forest font-semibold border-b border-refined-forest/20 pb-0.5 hover:border-refined-forest transition-colors">
@@ -195,7 +195,7 @@
             <h3 class="font-sans text-xl text-refined-forest tracking-wide">Women’s Health</h3>
             <p class="font-serif text-xs tracking-widest text-refined-sage uppercase font-medium">Restore & Thrive Program</p>
             <p class="font-serif text-sm text-refined-forest/70 leading-relaxed pt-1">
-              Compassionate, specialized support for hormone balance, mood, energy, and metabolism. Providing functional guidance from early adulthood through perimenopause and beyond.
+              Compassionate, individualized care focusing on balanced hormones, metabolic health, mood, and energy across all stages of life, including perimenopause and beyond.
             </p>
             <div class="pt-2">
               <NuxtLink to="/contact" class="inline-block font-sans text-xs tracking-wider uppercase text-refined-forest font-semibold border-b border-refined-forest/20 pb-0.5 hover:border-refined-forest transition-colors">

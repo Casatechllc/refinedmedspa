@@ -3,9 +3,11 @@
     <HomeHero />
     <HomePhilosophy />
     <HomeServiceGrid />
+    <HomeWhyChooseUs />
     <HomePricingTier />
-    <HomeSanctuaryExperience />
+    <!-- <HomeSanctuaryExperience /> -->
     <HomeRating />
     <HomeContact />
+    <HomeCTA />
     </div>
 </template>
