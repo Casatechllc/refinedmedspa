@@ -1,5 +1,5 @@
 <template>
-  <main class="w-full bg-refined-cream pt-28 lg:pt-36">
+  <main class="w-full bg-refined-cream pt-4 lg:pt-8">
     
     <header class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16 mb-16 lg:mb-24">
       <div class="max-w-4xl space-y-4">

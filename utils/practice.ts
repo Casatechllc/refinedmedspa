@@ -11,6 +11,7 @@ export interface PracticeConfig {
   address: {
     street: string
     cityStateZip: string
+    getEmbedLink: (apiKey: string) => string
     googleMapsLink: string
   }
   catchmentAreas: string[]
@@ -44,11 +45,11 @@ export const practiceDetails: PracticeConfig = {
     phoneRaw: "+12039026377",
     faxDisplay: "(203) 724-2281",
     faxRaw: "+12037242281",
-    email: "concierge@refined.com"
+    email: "paula@refinedhealthandaesthetics.com"
   },
   socials: {
-    instagramDisplay: "@refined.health.aesthetics",
-    instagramLink: "https://instagram.com/refined.health.aesthetics"
+    instagramDisplay: "@refinedhealthandaesthetics",
+    instagramLink: "https://instagram.com/refinedhealthandaesthetics"
   },
   // ADDED: Structured, easily editable clinical operating hours matrix
   schedule: [

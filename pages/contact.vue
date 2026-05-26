@@ -1,5 +1,5 @@
 <template>
-  <main class="w-full bg-refined-cream pt-28 lg:pt-36">
+  <main class="w-full bg-refined-cream pt-4 lg:pt-8">
     
     <header class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16 mb-16 lg:mb-24">
       <div class="max-w-4xl space-y-4">
@@ -21,7 +21,7 @@
             <h2 class="font-sans text-xl sm:text-2xl text-refined-forest font-light">Refined Studio Location</h2>
           </div>
           
-          <div class="font-serif text-sm text-refined-forest/80 space-y-4 leading-relaxed">
+          <div class="font-serif text-sm text-refined-forest/80 space-y-5 leading-relaxed">
             <div>
               <p class="font-sans font-semibold text-[10px] tracking-widest uppercase text-refined-forest/40">Studio Address</p>
               <p class="mt-0.5">{{ practiceDetails.address.street }}</p>
@@ -36,17 +36,26 @@
               </a>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <p class="font-sans font-semibold text-[10px] tracking-widest uppercase text-refined-forest/40">Direct Line</p>
-                <p class="mt-0.5 hover:text-refined-sage transition-colors">
-                  <a :href="`tel:${practiceDetails.contact.phoneRaw}`">{{ practiceDetails.contact.phoneDisplay }}</a>
-                </p>
+            <div class="space-y-4">
+              <div class="grid grid-cols-2 gap-4">
+                <div>
+                  <p class="font-sans font-semibold text-[10px] tracking-widest uppercase text-refined-forest/40">Direct Line</p>
+                  <p class="mt-0.5 hover:text-refined-sage transition-colors">
+                    <a :href="`tel:${practiceDetails.contact.phoneRaw}`">{{ practiceDetails.contact.phoneDisplay }}</a>
+                  </p>
+                </div>
+                <div>
+                  <p class="font-sans font-semibold text-[10px] tracking-widest uppercase text-refined-forest/40">Secure Fax</p>
+                  <p class="mt-0.5 hover:text-refined-sage transition-colors">
+                    <a :href="`fax:${practiceDetails.contact.faxRaw}`">{{ practiceDetails.contact.faxDisplay }}</a>
+                  </p>
+                </div>
               </div>
-              <div>
-                <p class="font-sans font-semibold text-[10px] tracking-widest uppercase text-refined-forest/40">Secure Fax</p>
-                <p class="mt-0.5 hover:text-refined-sage transition-colors">
-                  <a :href="`fax:${practiceDetails.contact.faxRaw}`">{{ practiceDetails.contact.faxDisplay }}</a>
+
+              <div class="pt-1">
+                <p class="font-sans font-semibold text-[10px] tracking-widest uppercase text-refined-forest/40">Digital Envelope</p>
+                <p class="mt-0.5 hover:text-refined-sage transition-colors break-all sm:break-normal">
+                  <a :href="`mailto:${practiceDetails.contact.email}`">{{ practiceDetails.contact.email }}</a>
                 </p>
               </div>
             </div>
@@ -90,14 +99,14 @@
         </div>
         
         <div class="w-full aspect-video sm:aspect-[16/10] bg-refined-stone/20 border border-refined-stone/30 relative shadow-2xs overflow-hidden">
-        <iframe 
+          <iframe 
             :src="mapEmbedUrl" 
             class="w-full h-full border-0 absolute inset-0 contrast-110 opacity-90"
             allowfullscreen="" 
             loading="lazy" 
             referrerpolicy="no-referrer-when-downgrade"
             title="Refined Studio Location Map"
-        ></iframe>
+          ></iframe>
         </div>
 
       </div>
@@ -114,10 +123,8 @@
 import { computed } from 'vue'
 import { practiceDetails } from '~/utils/practice'
 
-// Access your runtime configuration safely
 const config = useRuntimeConfig()
 
-// Dynamically compile the embed string with your secure API key
 const mapEmbedUrl = computed(() => {
   return practiceDetails.address.getEmbedLink(config.public.googleMapsApiKey)
 })
