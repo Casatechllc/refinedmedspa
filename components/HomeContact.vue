@@ -39,14 +39,14 @@
             </svg>
             <div class="space-y-1">
               <p class="font-sans text-xs tracking-wider uppercase font-semibold text-refined-forest">Our Practice</p>
-              <div class="pt-1">
-                <p>2337 Whitney Ave</p>
-                <p>Hamden, CT 06518</p>
+              <div class="pt-1 text-refined-forest/70">
+                <p>{{ practiceDetails.address.street }}</p>
+                <p>{{ practiceDetails.address.cityStateZip }}</p>
               </div>
               
               <div class="pt-2">
                 <a 
-                  href="https://www.google.com/maps/search/?api=1&query=2337+Whitney+Ave+Hamden+CT+06518" 
+                  :href="practiceDetails.address.googleMapsLink" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   class="inline-flex items-center space-x-1.5 font-sans text-xs font-semibold tracking-wider uppercase text-refined-forest border-b border-refined-forest/20 pb-0.5 hover:border-refined-sage hover:text-refined-sage transition-all duration-300"
@@ -59,7 +59,7 @@
               </div>
 
               <span class="block text-xs text-refined-forest/50 font-sans tracking-wide pt-2">
-                Serving New Haven, North Haven, Wallingford, & Cheshire
+                Serving {{ practiceDetails.catchmentAreas.join(', ') }}
               </span>
             </div>
           </div>
@@ -70,8 +70,15 @@
             </svg>
             <div>
               <p class="font-sans text-xs tracking-wider uppercase font-semibold text-refined-forest">Direct Contact</p>
-              <p class="mt-1">Phone: <a href="tel:2039026377" class="hover:text-refined-sage transition-colors font-sans font-medium">203.902.6377</a></p>
-              <p>Fax: <span class="font-sans">203.724.2281</span></p>
+              <p class="mt-1 font-serif text-sm text-refined-forest/70">
+                Phone: 
+                <a :href="`tel:${practiceDetails.contact.phoneRaw}`" class="hover:text-refined-sage transition-colors font-sans font-medium text-refined-forest">
+                  {{ practiceDetails.contact.phoneDisplay }}
+                </a>
+              </p>
+              <p class="font-serif text-sm text-refined-forest/70">
+                Fax: <span class="font-sans text-refined-forest">{{ practiceDetails.contact.faxDisplay }}</span>
+              </p>
             </div>
           </div>
         </div>
@@ -89,3 +96,7 @@
     </div>
   </section>
 </template>
+
+<script setup>
+import { practiceDetails } from '~/utils/practice'
+</script>
