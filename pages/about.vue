@@ -15,7 +15,7 @@
         </p>
         <div class="pt-4">
           <NuxtLink to="/contact" class="inline-block bg-refined-forest text-white font-sans text-xs tracking-widest uppercase font-semibold py-4 px-10 hover:bg-refined-sage transition-all duration-300 ease-out rounded-none shadow-xs">
-            Schedule Studio Intake
+            Schedule Intake
           </NuxtLink>
         </div>
       </div>
