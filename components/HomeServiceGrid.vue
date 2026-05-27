@@ -37,7 +37,7 @@
           :visible="{ opacity: 1, y: 0, transition: { duration: 1200, delay: 100 } }"
           class="group space-y-5"
         >
-          <div class="aspect-[3/4] w-full overflow-hidden bg-refined-stone/20 relative shadow-xs">
+          <div class="aspect-[4/4] lg:aspect-[3/4] w-full overflow-hidden bg-refined-stone/20 relative shadow-xs">
             <img 
               src="/mspa-image-5.png" 
               alt="Personalized Medical Weight Loss"
@@ -66,7 +66,7 @@
           :visible="{ opacity: 1, y: 0, transition: { duration: 1200, delay: 200 } }"
           class="group space-y-5"
         >
-          <div class="aspect-[3/4] w-full overflow-hidden bg-refined-stone/20 relative shadow-xs">
+          <div class="aspect-[4/4] lg:aspect-[3/4] w-full overflow-hidden bg-refined-stone/20 relative shadow-xs">
             <img 
               src="/home-hero.png" 
               alt="IV Hydration Therapy Menu"
@@ -95,7 +95,7 @@
           :visible="{ opacity: 1, y: 0, transition: { duration: 1200, delay: 300 } }"
           class="group space-y-5"
         >
-          <div class="aspect-[3/4] w-full overflow-hidden bg-refined-stone/20 relative shadow-xs">
+          <div class="aspect-[4/4] lg:aspect-[3/4] w-full overflow-hidden bg-refined-stone/20 relative shadow-xs">
             <img 
               src="/mspa-image-3.png" 
               alt="Functional Medicine & Whole-Person Wellness"
@@ -124,7 +124,7 @@
           :visible="{ opacity: 1, y: 0, transition: { duration: 1200, delay: 100 } }"
           class="group space-y-5"
         >
-          <div class="aspect-[3/4] w-full overflow-hidden bg-refined-stone/20 relative shadow-xs">
+          <div class="aspect-[4/4] lg:aspect-[3/4] w-full overflow-hidden bg-refined-stone/20 relative shadow-xs">
             <img 
               src="/mspa-image-1.png" 
               alt="Medical Aesthetics Refresh Treatment"
@@ -153,7 +153,7 @@
           :visible="{ opacity: 1, y: 0, transition: { duration: 1200, delay: 200 } }"
           class="group space-y-5"
         >
-          <div class="aspect-[3/4] w-full overflow-hidden bg-refined-stone/20 relative shadow-xs">
+          <div class="aspect-[4/4] lg:aspect-[3/4] w-full overflow-hidden bg-refined-stone/20 relative shadow-xs">
             <img 
               src="/mspa-image-2.png" 
               alt="Advanced Hormone & Wellness Assessment for Men"
@@ -182,7 +182,7 @@
           :visible="{ opacity: 1, y: 0, transition: { duration: 1200, delay: 300 } }"
           class="group space-y-5"
         >
-          <div class="aspect-[3/4] w-full overflow-hidden bg-refined-stone/20 relative shadow-xs">
+          <div class="aspect-[4/4] lg:aspect-[3/4] w-full overflow-hidden bg-refined-stone/20 relative shadow-xs">
             <img 
               src="/mspa-image-6.png" 
               alt="Restore & Thrive Program for Women"

@@ -1,5 +1,5 @@
 <template>
-  <section class="relative min-h-[90vh] w-full bg-refined-cream flex items-center justify-end overflow-hidden">
+  <section class="relative min-h-[90vh] w-full bg-refined-cream flex items-center justify-center lg:justify-end overflow-hidden">
     
     <div 
         v-motion
@@ -18,8 +18,8 @@
         <div class="absolute inset-0 bg-gradient-to-l from-refined-cream/80 via-refined-cream/40 to-transparent lg:from-refined-cream/40 pointer-events-none"></div>
     </div>
     
-    <div class="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-12 lg:px-16 py-16 flex justify-end">
-      <div class="w-full lg:max-w-xl flex flex-col justify-center items-start space-y-8 bg-refined-cream/30 lg:bg-transparent p-6 sm:p-8 lg:p-0 rounded-sm backdrop-blur-[2px] lg:backdrop-blur-none">
+    <div class="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-12 lg:px-16 py-16 flex justify-center lg:justify-end">
+      <div class="w-full lg:max-w-xl flex flex-col justify-center items-center lg:items-start text-center lg:text-left space-y-8 bg-refined-cream/30 lg:bg-transparent p-6 sm:p-8 lg:p-0 rounded-sm backdrop-blur-[2px] lg:backdrop-blur-none">
         
         <div
           v-motion

@@ -6,7 +6,7 @@
         v-motion
         :initial="{ opacity: 0, x: -30 }"
         :visible="{ opacity: 1, x: 0, transition: { duration: 1400, ease: 'easeOut' } }"
-        class="col-span-1 lg:col-span-6 relative aspect-[4/4] lg:w-full bg-refined-stone/20 overflow-hidden shadow-sm"
+        class="col-span-1 lg:col-span-6 relative aspect-[4/4] mx-auto lg:w-full lg:h-full max-h-[75vh] bg-refined-stone/20 overflow-hidden shadow-sm"
       >
         <img 
           src="/mspa-image-3.png" 
