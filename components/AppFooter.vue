@@ -53,7 +53,7 @@
         <div class="font-sans text-[11px] tracking-widest uppercase text-refined-forest/50">
           <span>Designed &amp; Developed by </span>
           <a 
-            href="https://casatechstudio.com" 
+            href="https://casatechllc.com" 
             target="_blank" 
             rel="noopener noreferrer" 
             class="text-refined-forest/70 hover:text-refined-sage underline underline-offset-4 decoration-refined-stone/40 transition-colors duration-300 font-medium"

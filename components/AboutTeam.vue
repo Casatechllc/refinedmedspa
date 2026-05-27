@@ -4,7 +4,7 @@
       
       <div class="max-w-xl mb-16 lg:mb-24 space-y-3">
         <span class="font-serif text-xs tracking-[0.2em] uppercase text-refined-sage block">Clinical Excellence</span>
-        <h2 class="font-sans text-3xl sm:text-4xl text-refined-forest tracking-wide font-light">Meet Our Practitioners</h2>
+        <h2 class="font-sans text-3xl sm:text-4xl text-refined-forest tracking-wide font-light">Our Care Team</h2>
         <p class="font-serif text-sm text-refined-forest/70 leading-relaxed">
           Our team unites advanced diagnostic medicine with precise physical restoration. Every protocol is directly guided by board-certified expertise.
         </p>

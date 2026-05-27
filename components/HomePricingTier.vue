@@ -4,7 +4,7 @@
       
       <div v-motion :initial="{ opacity: 0, y: 20 }" :visible="{ opacity: 1, y: 0, transition: { duration: 1200 } }" class="bg-refined-forest text-refined-cream p-8 md:p-12 mb-20 relative overflow-hidden shadow-xs">
         <div class="relative z-10 max-w-3xl space-y-4">
-          <span class="font-sans text-[10px] tracking-[0.25em] uppercase text-refined-sky font-bold bg-refined-sky/10 px-3 py-1.5 rounded-none">Phase 1: Limited Enrollment</span>
+          <span class="font-sans text-[10px] tracking-[0.25em] uppercase text-refined-sky font-bold bg-refined-sky/10 px-3 py-1.5 rounded-none">Limited Enrollment</span>
           <h3 class="font-sans text-2xl sm:text-3xl tracking-wide pt-2">Founding Patient Program</h3>
           <p class="font-serif text-sm sm:text-base text-refined-cream/80 leading-relaxed max-w-2xl">
             We are accepting our first group of patients for clinically supervised metabolic care tailored specifically to your goals. Secure your space to lock down exclusive lifelong wellness privileges.
