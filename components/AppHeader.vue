@@ -61,8 +61,8 @@
           </Transition>
         </div>
 
-        <NuxtLink to="/science-of-grace" class="font-sans text-xs tracking-[0.15em] uppercase text-refined-forest/80 hover:text-refined-forest transition-colors duration-300">
-          Science of Grace
+        <NuxtLink to="/getting-started" class="font-sans text-xs tracking-[0.15em] uppercase text-refined-forest/80 hover:text-refined-forest transition-colors duration-300">
+          Getting Started
         </NuxtLink>
         
         <NuxtLink to="/about" class="font-sans text-xs tracking-[0.15em] uppercase text-refined-forest/80 hover:text-refined-forest transition-colors duration-300">
@@ -125,7 +125,7 @@
             </div>
           </div>
 
-          <NuxtLink @click="isMobileMenuOpen = false" to="/science-of-grace" class="font-sans text-lg tracking-widest uppercase text-refined-forest">Science of Grace</NuxtLink>
+          <NuxtLink @click="isMobileMenuOpen = false" to="/getting-started" class="font-sans text-lg tracking-widest uppercase text-refined-forest">Getting Started</NuxtLink>
           <NuxtLink @click="isMobileMenuOpen = false" to="/about" class="font-sans text-lg tracking-widest uppercase text-refined-forest">About Us</NuxtLink>
           <NuxtLink @click="isMobileMenuOpen = false" to="/contact" class="font-sans text-lg tracking-widest uppercase text-refined-forest">Contact</NuxtLink>
         </nav>

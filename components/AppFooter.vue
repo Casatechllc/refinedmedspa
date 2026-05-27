@@ -24,7 +24,7 @@
           <ul class="space-y-2.5 font-serif text-sm text-refined-forest/70">
             <li><NuxtLink to="/" class="hover:text-refined-sage transition-colors duration-200">Home</NuxtLink></li>
             <li><NuxtLink to="/about" class="hover:text-refined-sage transition-colors duration-200">About Our Studio</NuxtLink></li>
-            <li><NuxtLink to="/science-of-grace" class="hover:text-refined-sage transition-colors duration-200">Science of Grace</NuxtLink></li>
+            <li><NuxtLink to="/getting-started" class="hover:text-refined-sage transition-colors duration-200">Getting Started</NuxtLink></li>
             <li><NuxtLink to="/contact" class="hover:text-refined-sage transition-colors duration-200">Connect With Us</NuxtLink></li>
           </ul>
         </div>

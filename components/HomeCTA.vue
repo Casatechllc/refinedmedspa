@@ -1,7 +1,7 @@
 <template>
   <section id="cta-choices" class="w-full bg-refined-cream overflow-hidden">
     
-    <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16 py-20 lg:py-24">
+    <!-- <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16 py-20 lg:py-24">
       <div class="text-center max-w-xl mx-auto mb-12 lg:mb-16 space-y-3">
         <span class="font-serif text-xs tracking-[0.2em] uppercase text-refined-sage block">Begin Your Refinement</span>
         <h2 class="font-sans text-2xl sm:text-3xl text-refined-forest tracking-wide">Select Your Path To Vitality</h2>
@@ -67,7 +67,7 @@
         </div>
 
       </div>
-    </div>
+    </div> -->
 
     <div class="relative w-full bg-refined-forest py-24 lg:py-32 overflow-hidden flex items-center justify-center">
       

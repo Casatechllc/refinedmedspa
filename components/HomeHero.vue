@@ -28,7 +28,7 @@
           class="flex items-center space-x-2"
         >
           <span class="font-serif text-xs tracking-[0.25em] uppercase text-refined-forest/90">
-            Enhancing What’s Already There
+            Feel seen. Live well
           </span>
         </div>
 
@@ -62,7 +62,7 @@
           :enter="{ opacity: 1, y: 0, transition: { duration: 1200, delay: 800, ease: 'easeOut' } }"
           class="font-serif text-base sm:text-lg text-refined-forest/90 italic max-w-sm leading-relaxed"
         >
-          "I still look like me, just the best version of me."
+          Thoughtful Medicine. Whole-Person Focus. Life-Changing Results
         </p>
 
         <div

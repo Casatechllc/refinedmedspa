@@ -2,12 +2,12 @@
   <div>
     <HomeHero />
     <HomePhilosophy />
-    <HomeServiceGrid />
     <HomeWhyChooseUs />
+    <HomeServiceGrid />
     <HomePricingTier />
     <!-- <HomeSanctuaryExperience /> -->
     <HomeRating />
-    <HomeContact />
     <HomeCTA />
+    <HomeContact />
     </div>
 </template>

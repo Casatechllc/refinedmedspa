@@ -98,7 +98,7 @@
         * Website Disclaimer: Medication is prescribed when medically appropriate following provider evaluation. Treatment plans and dosing vary based on individual medical needs.
       </p>
 
-      <div class="max-w-3xl bg-white/40 border border-refined-stone/40 p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+      <!-- <div class="max-w-3xl bg-white/40 border border-refined-stone/40 p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
         <div class="space-y-2">
           <h4 class="font-sans text-sm tracking-wider uppercase text-refined-forest font-bold">Metabolic Maintenance Program</h4>
           <p class="font-serif text-xs sm:text-sm text-refined-forest/70 max-w-xl">
@@ -109,7 +109,7 @@
           <span class="font-sans text-xl text-refined-forest tracking-tight">$199 <span class="text-xs font-serif text-refined-forest/50">/ month</span></span>
           <span class="font-serif text-[10px] text-refined-forest/40 uppercase tracking-widest">Maintenance Framework</span>
         </div>
-      </div>
+      </div> -->
 
     </div>
   </section>

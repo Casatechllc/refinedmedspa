@@ -1,5 +1,5 @@
 <template>
-  <section id="services" class="w-full bg-refined-cream pb-24 lg:pb-32 overflow-hidden">
+  <section id="services" class="w-full bg-refined-cream pt-24 pb-24 lg:pb-32 overflow-hidden">
     <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16">
       
       <div class="max-w-2xl mb-16 lg:mb-24 space-y-4">
@@ -53,8 +53,8 @@
               Sustainable, compassionate programs focused on metabolic health for lasting change, helping you regain energy, confidence, and long-term success.
             </p>
             <div class="pt-2">
-              <NuxtLink to="#pricing" class="inline-block font-sans text-xs tracking-wider uppercase text-refined-forest font-semibold border-b border-refined-forest/20 pb-0.5 hover:border-refined-forest transition-colors">
-                View Launch Rates
+              <NuxtLink to="/services/medical-weight-loss" class="inline-block font-sans text-xs tracking-wider uppercase text-refined-forest font-semibold border-b border-refined-forest/20 pb-0.5 hover:border-refined-forest transition-colors">
+                Learn More
               </NuxtLink>
             </div>
           </div>
@@ -82,8 +82,8 @@
               Restore, replenish, and revitalize with essential vitamins and nutrients delivered directly for fast, effective support for energy, recovery, and immunity.
             </p>
             <div class="pt-2">
-              <NuxtLink to="/contact" class="inline-block font-sans text-xs tracking-wider uppercase text-refined-forest font-semibold border-b border-refined-forest/20 pb-0.5 hover:border-refined-forest transition-colors">
-                Book IV Experience
+              <NuxtLink to="/services/iv-hydration" class="inline-block font-sans text-xs tracking-wider uppercase text-refined-forest font-semibold border-b border-refined-forest/20 pb-0.5 hover:border-refined-forest transition-colors">
+                Learn More
               </NuxtLink>
             </div>
           </div>
@@ -111,8 +111,8 @@
               A personalized, root-cause approach to optimize hormones, performance, and vitality, complemented by medical aesthetics for natural, elevated confidence.
             </p>
             <div class="pt-2">
-              <NuxtLink to="/contact" class="inline-block font-sans text-xs tracking-wider uppercase text-refined-forest font-semibold border-b border-refined-forest/20 pb-0.5 hover:border-refined-forest transition-colors">
-                Begin Path Toward Vitality
+              <NuxtLink to="/services/functional-medicine" class="inline-block font-sans text-xs tracking-wider uppercase text-refined-forest font-semibold border-b border-refined-forest/20 pb-0.5 hover:border-refined-forest transition-colors">
+                Learn More
               </NuxtLink>
             </div>
           </div>
@@ -140,8 +140,8 @@
               Designed to enhance your natural beauty while maintaining authenticity and balance. Guided by advanced medical training for subtle, refreshed, and rejuvenated outcomes.
             </p>
             <div class="pt-2">
-              <NuxtLink to="/contact" class="inline-block font-sans text-xs tracking-wider uppercase text-refined-forest font-semibold border-b border-refined-forest/20 pb-0.5 hover:border-refined-forest transition-colors">
-                Schedule Aesthetic Consultation
+              <NuxtLink to="/services/aesthetics" class="inline-block font-sans text-xs tracking-wider uppercase text-refined-forest font-semibold border-b border-refined-forest/20 pb-0.5 hover:border-refined-forest transition-colors">
+                Learn More
               </NuxtLink>
             </div>
           </div>
@@ -169,8 +169,8 @@
               Personalized approach to optimize strength, energy, and long-term performance through hormone balance, metabolic health, and preventive care.
             </p>
             <div class="pt-2">
-              <NuxtLink to="/contact" class="inline-block font-sans text-xs tracking-wider uppercase text-refined-forest font-semibold border-b border-refined-forest/20 pb-0.5 hover:border-refined-forest transition-colors">
-                Optimize Performance
+              <NuxtLink to="/services/mens-health" class="inline-block font-sans text-xs tracking-wider uppercase text-refined-forest font-semibold border-b border-refined-forest/20 pb-0.5 hover:border-refined-forest transition-colors">
+                Learn More
               </NuxtLink>
             </div>
           </div>
@@ -195,11 +195,11 @@
             <h3 class="font-sans text-xl text-refined-forest tracking-wide">Women’s Health</h3>
             <p class="font-serif text-xs tracking-widest text-refined-sage uppercase font-medium">Restore & Thrive Program</p>
             <p class="font-serif text-sm text-refined-forest/70 leading-relaxed pt-1">
-              Compassionate, individualized care focusing on balanced hormones, metabolic health, mood, and energy across all stages of life, including perimenopause and beyond.
+              Compassionate, individualized care focusing on balanced hormones, metabolic health, mood, and energy across all stages of life, including perimenopause and beyond. 
             </p>
             <div class="pt-2">
-              <NuxtLink to="/contact" class="inline-block font-sans text-xs tracking-wider uppercase text-refined-forest font-semibold border-b border-refined-forest/20 pb-0.5 hover:border-refined-forest transition-colors">
-                Begin Women's Journey
+              <NuxtLink to="/services/womens-health" class="inline-block font-sans text-xs tracking-wider uppercase text-refined-forest font-semibold border-b border-refined-forest/20 pb-0.5 hover:border-refined-forest transition-colors">
+                Learn More
               </NuxtLink>
             </div>
           </div>

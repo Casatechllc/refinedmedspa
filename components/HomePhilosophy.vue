@@ -6,14 +6,14 @@
         v-motion
         :initial="{ opacity: 0, x: -30 }"
         :visible="{ opacity: 1, x: 0, transition: { duration: 1400, ease: 'easeOut' } }"
-        class="col-span-1 lg:col-span-6 relative aspect-[4/5] w-full bg-refined-stone/20 overflow-hidden shadow-sm"
+        class="col-span-1 lg:col-span-6 relative aspect-[4/4] lg:w-full bg-refined-stone/20 overflow-hidden shadow-sm"
       >
         <img 
           src="/mspa-image-3.png" 
           alt="Refined Provider and Patient Interaction"
           loading="lazy"
           decoding="async"
-          class="w-full h-full object-cover object-center select-none scale-102 hover:scale-105 transition-transform duration-1000"
+          class=" lg:w-full lg:h-full object-cover object-center select-none scale-102 hover:scale-105 transition-transform duration-1000"
         />
         <div class="absolute inset-4 border border-refined-cream/20 pointer-events-none"></div>
       </div>
@@ -26,7 +26,7 @@
           :visible="{ opacity: 1, y: 0, transition: { duration: 1000, delay: 100 } }"
           class="font-serif text-xs tracking-[0.25em] uppercase text-refined-sage block"
         >
-          Our Positioning Statement
+          Rooted in clinical science. Tailored entirely to you.
         </span>
 
         <h2 
@@ -35,7 +35,7 @@
           :visible="{ opacity: 1, y: 0, transition: { duration: 1200, delay: 200 } }"
           class="font-sans text-3xl sm:text-4xl text-refined-forest tracking-wide leading-tight animate-none"
         >
-          Where medical precision meets personalized wellness.
+          At Refined Health & Aesthetics, your well-being is our priority.
         </h2>
 
         <div 
@@ -52,10 +52,10 @@
           class="space-y-6 text-sm sm:text-base text-refined-forest/80 font-serif leading-relaxed"
         >
           <p>
-            Welcome to an elevated healthcare experience designed to help you feel and function at your absolute best. We provide personalized medical weight loss, functional medicine, hormone health, aesthetics, and IV hydration therapies explicitly designed to support long-term wellness and structural optimization.
-          </p>
-          <p>
-            Our practice looks beyond surface symptoms to understand the complete picture of health—interconnecting physical, emotional, and functional wellbeing. Grounded in extensive clinical critical care experience, we deliver thoughtful, evidence-based care tailored precisely to your unique biology, goals, and lifestyle.
+            Led by expert Nurse Practitioners, we investigate the root causes of fatigue, weight resistance,
+            and physical decline to restore your total vitality. By seamlessly integrating traditional medicine
+            with advanced holistic care, we provide personalized pathways to help you function at your
+            absolute best.
           </p>
         </div>
 
@@ -67,18 +67,17 @@
         >
           <div>
             <h4 class="font-sans text-xs tracking-widest text-refined-forest uppercase font-semibold">Personalization</h4>
-            <p class="font-serif text-[11px] text-refined-forest/60 mt-1">Tailored Biology</p>
+            <p class="font-serif text-[11px] text-refined-forest/60 mt-1">Nurse Practitioner–Led</p>
           </div>
           <div class="border-x border-refined-stone/40">
             <h4 class="font-sans text-xs tracking-widest text-refined-forest uppercase font-semibold">Integrity</h4>
-            <p class="font-serif text-[11px] text-refined-forest/60 mt-1">Transparent Care</p>
+            <p class="font-serif text-[11px] text-refined-forest/60 mt-1">Root-Cause Focused</p>
           </div>
           <div>
             <h4 class="font-sans text-xs tracking-widest text-refined-forest uppercase font-semibold">Excellence</h4>
-            <p class="font-serif text-[11px] text-refined-forest/60 mt-1">Evidence-Based</p>
+            <p class="font-serif text-[11px] text-refined-forest/60 mt-1">You-Centered Always</p>
           </div>
         </div>
-
       </div>
 
     </div>
