@@ -5,6 +5,11 @@ export default defineNuxtConfig({
   compatibilityDate: '2026-05-20',
   devtools: { enabled: true },
 
+  devServer: {
+    host: '0.0.0.0', // Exposes the server to your local network
+    port: 3000       // Explicitly ensures it runs on port 300
+  },
+
   // Declare your main global style sheet
   css: ['~/assets/css/main.css'],
 
