@@ -1,8 +1,8 @@
 <template>
-  <section id="about-hero" class="w-full bg-refined-cream pt-28 lg:pt-36 pb-20 lg:pb-28 overflow-hidden">
-    <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16 space-y-16 lg:space-y-24">
+  <section id="about-hero" class="w-full bg-refined-cream pt-24 sm:pt-28 lg:pt-36 pb-16 sm:pb-20 lg:pb-28 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16 space-y-12 sm:space-y-16 lg:space-y-24">
       
-      <header class="max-w-4xl space-y-4">
+      <header class="max-w-4xl space-y-3 sm:space-y-4">
         <span 
           v-motion
           :initial="{ opacity: 0, y: 15 }"
@@ -15,22 +15,22 @@
           v-motion
           :initial="{ opacity: 0, y: 20 }"
           :enter="{ opacity: 1, y: 0, transition: { duration: 1200, delay: 100 } }"
-          class="font-sans text-4xl sm:text-5xl lg:text-7xl text-refined-forest tracking-wide font-light leading-tight"
+          class="font-sans text-3xl sm:text-5xl lg:text-7xl text-refined-forest tracking-wide font-light leading-tight"
         >
           A Shared Vision, <br class="hidden sm:inline" />Rooted in Family.
         </h1>
-        <div class="w-12 h-[1px] bg-refined-stone/40 pt-4"></div>
+        <div class="w-12 h-[1px] bg-refined-stone/40 mt-4 sm:mt-6"></div>
       </header>
 
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 sm:gap-16 lg:gap-20 items-start">
         
         <div 
           v-motion
           :initial="{ opacity: 0, y: 30 }"
           :enter="{ opacity: 1, y: 0, transition: { duration: 1200, delay: 300 } }"
-          class="lg:col-span-5 space-y-8"
+          class="w-full lg:col-span-5 space-y-6 sm:space-y-8"
         >
-          <div class="relative aspect-[4/5] w-full max-h-[75vh] mx-auto lg:mx-0 bg-refined-stone/20 overflow-hidden shadow-sm">
+          <div class="relative aspect-[4/5] w-full lg:max-h-[75vh] mx-auto lg:mx-0 bg-refined-stone/20 overflow-hidden shadow-xs">
             <img 
               src="/mspa-image-3.png" 
               alt="Refined Founders — Mother and Twin Daughters Team" 
@@ -41,7 +41,7 @@
             <div class="absolute inset-4 border border-refined-cream/15 pointer-events-none"></div>
           </div>
 
-          <div class="font-serif text-sm sm:text-base text-refined-forest/80 space-y-6 leading-relaxed">
+          <div class="font-serif text-sm sm:text-base text-refined-forest/80 space-y-5 sm:space-y-6 leading-relaxed">
             <p>
               As Nurse Practitioners working in high-acuity environments and Intensive Care Units, we cared for patients during their most critical and fragile moments. We loved the science of medicine, but witnessing the heavy toll of reactive healthcare sparked a profound shift in our perspective.
             </p>
@@ -55,9 +55,9 @@
           v-motion
           :initial="{ opacity: 0, y: 30 }"
           :enter="{ opacity: 1, y: 0, transition: { duration: 1200, delay: 500 } }"
-          class="col-span-7 space-y-8 lg:pt-24"
+          class="w-full lg:col-span-7 space-y-6 sm:space-y-8 lg:pt-24"
         >
-          <div class="relative aspect-[4/3] sm:aspect-[16/10] lg:aspect-[4/3] w-full max-h-[75vh] mx-auto lg:mx-0 bg-refined-stone/20 overflow-hidden shadow-sm">
+          <div class="relative aspect-[4/3] sm:aspect-[16/10] lg:aspect-[4/3] w-full lg:max-h-[75vh] mx-auto lg:mx-0 bg-refined-stone/20 overflow-hidden shadow-xs">
             <img 
               src="/home-hero.png" 
               alt="Refined Health and Aesthetics Clinical Sanctuary Environment" 
@@ -68,7 +68,7 @@
             <div class="absolute inset-4 border border-refined-cream/15 pointer-events-none"></div>
           </div>
 
-          <div class="font-serif text-sm sm:text-base text-refined-forest/80 space-y-6 leading-relaxed max-w-7xl">
+          <div class="font-serif text-sm sm:text-base text-refined-forest/80 space-y-5 sm:space-y-6 leading-relaxed">
             <p>
               Refined Health &amp; Aesthetics was born from that exact realization. As a mother and twin-daughter team, we brought our decades of combined clinical expertise together to build a completely new kind of practice. We wanted to bridge the gap between cutting-edge medical science and unhurried, heartfelt connection.
             </p>
@@ -84,7 +84,3 @@
     </div>
   </section>
 </template>
-
-<script setup>
-// Transitions are powered natively via v-motion bindings
-</script>
